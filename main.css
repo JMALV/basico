@@ -1,0 +1,199 @@
+*{
+	color: whitesmoke;
+	font-family: 'Poppins', sans-serif;
+	
+}
+
+html  {
+	background:url("sky.png")
+  }
+
+.container-p{
+	background: url("sky.png");
+}
+
+.banner{
+	text-align: center;
+	padding: 12em 8em;
+	color: whitesmoke;
+}
+
+.main{
+	padding: 1%
+}
+
+.submenu{
+	display: flex;
+	list-style-type: none;
+}
+
+.submenu li{
+	padding: 0em 3.5em;
+}
+
+.top{
+	padding: 3em;
+}
+
+.d-block{
+	border-radius: 5%;
+}
+
+.grid-container {  
+    display: grid;  
+    grid-template-columns: 6fr 1fr ;  
+	padding-right: 2em;
+	grid-gap: 1em;
+}
+
+option{
+	color: black ;
+}
+
+footer{
+	padding: 2em;
+	text-align: end;
+}
+.text{
+	display: block;
+	font-size: 1em;
+	text-align: justify;
+}
+
+.carousel{
+	padding: 0em 5em;
+}
+
+.contact{
+	display: flex;
+	justify-content: space-around;
+	height: 2em;
+	text-align: end;
+}
+
+
+/* DISTRIBUCION PANTALLAS GRANDES */
+@media (min-width: 1200px){
+	.data{
+		display: grid;
+		padding: 5em 6em;
+		grid-template-columns: 5fr 2fr 3fr;
+	}
+}
+
+
+
+/* ALGUNAS COSAS PARA PANTALLAS NOTEBOOKS */
+  @media (min-width: 1200px) and (max-width: 1400px) {
+
+	  .text{
+		  font-size: 0.9em;
+	  }
+
+	  data{
+		grid-template-columns: 4.5fr 2fr 3fr;
+	}
+
+	.carousel{
+		padding: 0em 3em;
+	}
+	.d-block{
+		width: 400px; height: 400px;
+	}
+	
+	.carousel-inner{
+		justify-content: center;
+		align-content: center;
+	}
+	
+}
+
+
+/*NOTEBOOKS CHICAS, TABLETS GRANDES O APAISADAS*/
+@media (min-width: 900px) and (max-width: 1200px){
+
+	.banner{
+		padding: 2em 1.5em;
+	}
+
+	.text{
+		font-size: 0.9em;
+	}
+	
+	.top{
+		padding: 3em 0em 0em 0em;
+	}
+	.carousel{
+		padding-left: 22%;
+	}
+	.data{
+		display: grid;
+		padding: 3em 4em;
+		grid-template-columns: 100%;
+		grid-template-rows: 1fr 2fr 1fr;
+  }
+
+}
+
+/*TABLETS, TELEFONOS APAISADOS*/
+@media (min-width: 550px) and (max-width: 900px){
+	
+	.top{
+		padding: 1.5em ;
+	}
+	.banner{
+		padding: 0em;
+		padding-bottom: 1em;
+	}
+
+	.text{
+		font-size: 0.85em;
+		padding: 0em 2em;
+	}
+
+	.carousel{
+		padding-left: 17%;
+		padding-bottom: 3em;
+	}
+
+	.data{
+		display: grid;
+		grid-template-rows: 1fr 1.5fr 1.54fr;
+  }
+}
+
+/*CELULARES*/
+@media (max-width: 550px){
+	.top{
+		padding: 1em ;
+	}
+
+	.data{
+		display: grid;
+		grid-template-rows: 1fr 1.5fr 1.4fr;
+		grid-gap: 3em;
+  }
+
+  .submenu li{
+	padding: 0em 1.8em;
+}
+
+	.redes{
+		padding-left: 9em;
+	}
+
+	.banner{
+		padding: 0em;
+		padding-bottom: 1em;
+	}
+
+	.imgn{
+	width: 450px; height: 125px;
+	padding-left: 7em;
+	}
+	
+	.text{
+		font-size: 1em;
+		padding: 0em 2em;
+	}
+}
