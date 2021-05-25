@@ -4,12 +4,34 @@
 	
 }
 
-html  {
-	background:url("sky.png")
-  }
+/*
+Video Settings, robado de ws3
+*/
+
+#myVideo {
+	width: 80%;
+	height: 80%;	
+}
+
+  /*Fin de la robada */
+
+html, body { 
+	width: 100%; 
+	height: 100%; 
+	margin: 0 auto; 
+	text-align: center; 
+	background: url("sky.png");
+}
 
 .container-p{
+	display: flex;
+	flex-flow: column;
 	background: url("sky.png");
+}
+
+.item{
+	background-color: none;
+	text-decoration: none;
 }
 
 .banner{
@@ -18,9 +40,6 @@ html  {
 	color: whitesmoke;
 }
 
-.main{
-	padding: 1%
-}
 
 .submenu{
 	display: flex;
@@ -67,14 +86,19 @@ footer{
 .contact{
 	display: flex;
 	justify-content: space-around;
-	height: 2em;
 	text-align: end;
 }
 
+.initiallyHidden{
+	display: none;
+}
 
+.videopart{
+	padding-top: 3em;
+}
 /* DISTRIBUCION PANTALLAS GRANDES */
 @media (min-width: 1200px){
-	.data{
+	#data{
 		display: grid;
 		padding: 5em 6em;
 		grid-template-columns: 5fr 2fr 3fr;
@@ -126,7 +150,7 @@ footer{
 	.carousel{
 		padding-left: 22%;
 	}
-	.data{
+	#data{
 		display: grid;
 		padding: 3em 4em;
 		grid-template-columns: 100%;
@@ -156,7 +180,7 @@ footer{
 		padding-bottom: 3em;
 	}
 
-	.data{
+	#data{
 		display: grid;
 		grid-template-rows: 1fr 1.5fr 1.54fr;
   }
@@ -168,12 +192,16 @@ footer{
 		padding: 1em ;
 	}
 
-	.data{
+	#data{
 		display: grid;
-		grid-template-rows: 1fr 1.5fr 1.4fr;
-		grid-gap: 3em;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 2em;
   }
 
+   .resto{
+	   display: grid;
+	   grid-template-rows: 1fr 0.1fr;
+   }
   .submenu li{
 	padding: 0em 1.8em;
 }
@@ -196,4 +224,5 @@ footer{
 		font-size: 1em;
 		padding: 0em 2em;
 	}
+
 }
